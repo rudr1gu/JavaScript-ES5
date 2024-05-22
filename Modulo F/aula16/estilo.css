@@ -1,0 +1,96 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    min-height: 100vh;
+    width: 100vw;
+    background: linear-gradient(95deg, #4141d6, #7f6da8);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+main {
+    background-color: white;
+    width: 50vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.568);
+    margin: 20px auto;
+    padding: 10px;
+}
+
+div, form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%
+}
+
+#result{
+    padding: 10px;
+    border: 1px solid black;
+    width: 50%;
+    min-height: 90px;
+    border-radius: 10px;
+}
+
+input{
+    margin: 5px auto;
+    border-radius: 7px;
+}
+
+p {
+    margin: 2px;
+}
+
+#num{
+    width:50%;
+    border: 1px solid black;
+    padding: 3px;
+}
+
+#fim, #send{
+    background: linear-gradient(95deg, #4141d6, #7f6da8);
+    cursor: pointer;
+    width: 120px;
+    padding: 3px;
+    color: white;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+    font-weight: bolder;
+}
+
+#fim:hover, #send:hover{
+    background: linear-gradient(95deg, blue, rgb(94, 32, 238));
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+footer {
+    width: 100vw;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    margin: 0px;
+    padding: 5px;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font-style: italic;
+}

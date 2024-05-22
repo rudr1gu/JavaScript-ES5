@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tratamento de dados</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+
+        }
+    </style>
+</head>
+<body>
+
+    <script>
+        var nome = prompt("Qual é o seu nome?")
+
+        document.write(`Olá ${nome.toUpperCase()}, Seu nome tem ${nome.length} letras! <br>`)
+
+
+    var n1 = 3500
+
+    console.log(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}))
+
+    console.log(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'USD'}))
+
+    console.log(n1.toLocaleString('pt-BR', {style: 'currency', currency: 'EUR'}))
+     
+
+    </script>
+    
+</body>
+</html>

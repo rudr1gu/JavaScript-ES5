@@ -1,0 +1,163 @@
+html{
+    box-sizing: border-box;
+    height: 100%;
+}
+
+*,
+*::before,
+*::after{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Handlee&family=Young+Serif&display=swap');
+
+:root{
+    --cor1: #262626;
+    --cor2: #595959;
+    --cor3: #F2F2F2;
+    --cor4: #D0E2F2;
+    --cor5: #8D9AA6;
+}
+
+body {
+    background: linear-gradient(360deg, #183BB5, #106ACC, #1094C2);
+    font-family: 'Handlee', cursive;
+    font-size: 1em;
+}
+
+nav {
+    display: block;
+    position: absolute;
+    top:0;
+    background-color: var(--cor1);
+    width: 100%;
+    min-height: 70px;
+    max-height: 90px;
+    color: white;
+    text-align: center;
+    justify-content: center;
+    z-index: 1000;
+    font-family: 'Handlee', cursive;
+}
+
+.rede-sociais{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+li>a{
+    color: white;
+    text-decoration: none;
+    margin: 5px 10px 0;
+    font-size: 1.2em;
+}
+
+.github:hover{
+    font-style: italic;
+    background: purple;
+    border-radius: 10px;
+}
+
+.insta:hover{
+    font-style: italic;
+    background: linear-gradient(90deg, #F20530, #D90452, #D90479, #BF048D, #BF04B3 );
+    border-radius: 10px;
+}
+
+.yt:hover{
+    font-style: italic;
+    background: red;
+    border-radius: 10px;
+}
+
+.link:hover{
+    font-style: italic;
+    background: blue;
+    border-radius: 10px;
+}
+
+span {
+    color: #1094C2;
+}
+
+
+h1 {
+    font-family: 'Handlee', cursive;
+    position: absolute;
+    top: 90px;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px black;
+}
+
+main {
+    position: absolute;
+    top:170px;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255);
+    max-width: 400px;
+    min-width: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 3px 3px 6px rgba(0, 0, 0, 0.568);
+    margin: auto;
+    padding: 10px;
+    align-items: center;
+    z-index: 100;
+}
+
+input {
+    display: flex;
+    text-align: center;
+    margin: 2px auto;
+    flex-wrap: wrap;
+    border-radius: 7px;
+    font-family: 'Handlee', cursive;
+    font-size: 0.8em;
+    border: 1px solid rgba(0, 0, 0, 0.35);
+}
+
+#send{
+    width: 100px;
+    border-radius: 7px;
+    padding: 2px;
+    border: 1px solid rgba(0, 0, 0, 0.603);
+    font-weight: 500;
+}
+
+#send:hover{
+    background: linear-gradient(360deg, #010326, #1C788C, #23828C);
+    color: white;
+    font-weight: bolder;
+    font-style: italic;
+}
+
+select {
+    display: flex;
+    margin: 10px auto;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 1em;
+    width: 200px;
+    text-align: center;
+}
+
+
+footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    color: white;
+    text-align: center;
+    text-shadow: 1px 1px black;
+    font-style: italic;
+    z-index: 1;
+}

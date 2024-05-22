@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 009</title>
+</head>
+<body>
+    <h1> Verificando nacionalidade</h1>
+
+    <form method="post">
+        <label>Digite o pais onde você nasceu</label> <input type="country" id="pais"> <input type="button" value="Verificar" onclick="verificar()">
+    </form>
+
+    <div id="res"></div>
+
+
+
+<script>
+
+    function verificar(){
+    
+        var pais = document.getElementById('pais').value
+    
+            if (pais=='brasil' || pais=='Brasil'){
+                (document.getElementById('res').innerHTML = 'Brasileiro')}
+            
+            else{document.getElementById('res').innerHTML = ('Estrangeiro')}
+    }
+</script>
+
+</body>
+</html>

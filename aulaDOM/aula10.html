@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        #area{
+            background-color: green;
+            color: white;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            margin:20px auto;
+            border-radius: 300px;
+            font-size: 20pt;
+
+        }
+
+        #area:hover{
+            box-shadow: 0px 0px 200px yellow;
+        }
+
+        #area2{
+            background-color: green;
+            color: white;
+            width: 300px;
+            height: 300px;
+            line-height: 300px;
+            text-align: center;
+            margin: auto;
+            border-radius: 300px;
+            font-size: 20pt;
+
+        }
+
+        #area2:hover{
+            box-shadow: 0px 0px 200px yellow;
+        }
+    </style>
+</head>
+<body>
+
+
+    <!-- Evento dentro do html-->
+    <div id="area" onclick="clickar()" onmouseenter="mouse()" onmouseout="sair()">
+        Click
+    </div>
+
+    <div id="area2">
+        Não click
+
+    </div>
+
+
+
+    <script>
+        //mdn web docs - bibliografia de referencia
+
+        
+        
+        //---------------------------------------------------------------------------
+
+        function clickar () {
+            var area = document.getElementById("area").style.backgroundColor = ("green")
+        }
+
+        function mouse (){
+            var mouse = document.getElementById("area").style.backgroundColor = ("blue")
+        }
+
+        function sair (){
+            var sair = document.getElementById("area").style.backgroundColor = ("red")
+        }
+
+        //-----------------------------------------------------------------------------------
+
+        //Evento dentro do JS
+
+        var a = document.getElementById("area2")
+
+            a.addEventListener('click', clicar)
+            a.addEventListener('mouseenter', entrar)
+            a.addEventListener('mouseout', exit)
+            function clicar(){
+                a.innerText = "Clicou"
+            }
+
+            function entrar (){
+                a.style.backgroundColor = ('black')
+            }
+
+            function exit (){
+                a.style.backgroundColor = ('yellow')
+            }
+
+    </script>
+    
+</body>
+</html>

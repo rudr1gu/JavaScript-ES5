@@ -1,0 +1,45 @@
+body {
+    background: linear-gradient(150deg, rgb(106, 5, 240), rgb(20, 89, 218));
+    height: 100vh;
+}
+
+header {
+    text-align: center;
+    color: white;
+
+}
+
+main {
+    min-width: 280px;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.521);
+}
+
+div {
+    text-align: center;
+    margin: 8px;
+    
+}
+
+footer {
+    min-width: 280px;
+    max-width: 800px;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+}
+
+footer>p {
+    padding: 0px;
+    margin: 0px;
+    
+}

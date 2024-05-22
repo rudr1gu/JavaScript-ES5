@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores</title>
+    <style>
+        body{
+            background: linear-gradient(45deg, #0000ff, #04042c );
+            height: 80vh;
+        }
+
+        section{
+            width: 70%;
+            margin: 10vh auto;
+            border: 2px solid rgba(0, 0, 0, 0.8);
+            border-radius: 20px;
+            padding: 20px;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.685);
+        }
+        h1 {
+            font-size: 1em;
+        }
+
+    </style>
+</head>
+<body> 
+    <section>
+        <h1>2 -  ESCREVA UM ALGORITMO QUE LEIA UM VETOR DE 15 NÚMEROS INTEIROS E EXIBA AO FINAL OS NUMEROS ARMAZENADOS NAS POSIÇÕES;</h1>
+        <p>Resultado:</p>
+        
+        <p id="res"></p>
+    </section>
+
+    <script>
+        let numero = [10,20,30,40,50,60,70,80,90,92,94,96,98,100,102]
+        let res = document.getElementById("res")
+
+        for (pos in numero){
+            res.innerHTML += `Numero: ${numero[pos]} Posição: ${pos} <br>`
+        }
+
+        
+    </script>
+    
+</body>
+</html>

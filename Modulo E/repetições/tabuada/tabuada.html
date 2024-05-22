@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta port" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <h2> <i class='bx bx-code-alt' ></i> Rudr<span>1</span>gu</h2>
+
+        <ul class="rede-sociais">
+            <li class="github">
+                <a href="https://github.com/rudr1gu" target="_blank"><i class='bx bxl-github'></i>GitHub</a>
+            </li>
+            <li class="insta">
+                <a href="https://instagram.com/rudr1gu" target="_blank"><i class='bx bxl-instagram' ></i>Instagram</a>
+            </li>
+            <li class="yt">
+                <a href="https://youtube.com/@rudr1gu" target="_blank"><i class='bx bxl-youtube' ></i>YouTube</a>
+            </li>
+            <li class="link">
+                <a href="https://linkedin.com/in/rudr1gu" target="_blank"><i class='bx bxl-linkedin-square' ></i>Linkdin</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header>
+            <h1>Tabuada</h1>
+    </header>
+    <main>
+        <div id="formulario">
+            <form method="post">
+                    <input type="number"  id="inicio" placeholder="Valor Inicial">
+                    <input type="number"  id="fim" placeholder="Valor Final"> <br>
+            <input type="button" value="Gerar Tabuada" id="send" onclick="contar()">
+            </form>  
+
+        </div>
+        <div id="res">
+            <select name="tabuada" id="result" size="15"></select>
+        </div>
+    </main>
+
+    <footer> 
+        <p> &copy; Rudr1gu</p> 
+    </footer>
+
+    <script src="TABUADAEVIL.js"></script>
+</body>
+</html>
